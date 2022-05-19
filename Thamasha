@@ -1,0 +1,111 @@
+#include"Payment.h"
+#include"Invoice.h"
+
+class Booking
+{
+private:
+	
+    char BookingID[10];
+    char BookingDescription[50];
+    double BookingPrice;
+    char BookingDate[10];
+
+   
+    public:
+    	
+    Booking();
+    Booking(const char bbookingID[],const char bbookingDescription[],double bbookingPrice, const char bbookingDate[]);
+    void calculateBookingPrice(int id, char bType[]);
+    void displayBookingPrice();
+   ~Booking();
+};
+
+
+
+class payment
+#include "Booking.h"
+#include<cstring>
+Booking::Booking()
+{
+strcpy(BookingID, "");
+strcpy(BookingDescription, "");
+strcpy(BookingDate, "");
+BookingPrice = 0;
+
+}
+Booking::Booking(const char bbookingID[],const char bbookingDate[], const char bbookingDescription[], double bbookingPrice)
+{
+strcpy(BookingID, bbookingID);
+strcpy(BookingDate, bbookingDate);
+strcpy(BookingDescription, bbookingDescription);
+BookingPrice = 0;
+}
+void Booking::calculateBookingPrice(int id, char bType[])
+{
+}
+void Booking::displayBookingPrice()
+{
+}
+Booking::~Booking()
+{
+}
+
+
+#include "Booking.h"
+#include<cstring>
+Booking::Booking()
+{
+strcpy(BookingID, "");
+strcpy(BookingDescription, "");
+strcpy(BookingDate, "");
+BookingPrice = 0;
+
+}
+Booking::Booking(const char bbookingID[],const char bbookingDate[], const char bbookingDescription[], double bbookingPrice)
+{
+strcpy(BookingID, bbookingID);
+strcpy(BookingDate, bbookingDate);
+strcpy(BookingDescription, bbookingDescription);
+BookingPrice = 0;
+}
+void Booking::calculateBookingPrice(int id, char bType[])
+{
+}
+void Booking::displayBookingPrice()
+{
+}
+Booking::~Booking()
+{
+}
+
+
+#include "Payment.h"
+#include<cstring>
+Payment::Payment()
+{
+payID ;
+strcpy(payType, "");
+payDate;
+payAmount = 0;
+}
+Payment::Payment(int ppayID, const char ppayType[], int ppayDate, double ppayAmount)
+{
+payID = pID;
+strcpy(payType, ppayType);
+payAmount = ppayAmount;
+}
+void Payment::displayPaymentAmount()
+{
+}
+void Payment::checkPayment()
+{
+}
+void Payment::confirmPayment()
+{
+}
+Payment::~Payment()
+{
+}
+
+
+
