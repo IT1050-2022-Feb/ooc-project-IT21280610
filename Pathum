@@ -1,0 +1,60 @@
+class Package
+{
+	private :
+		char package_ID[10];
+		char package_name[30];
+		char package_description[300];
+		
+	public :
+		void addPackage(char p_id[], char p_name[], char p_des[]);
+		void displayPackage();
+		
+};
+
+class Feedback
+{
+	private :
+		char feedback_ID[10];
+		char feedback_Description[200];
+		
+	public :
+		void addFeedback(char f_id[], char f_msg[]);
+		void displayFeedback();
+		
+};
+
+#include "Package.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+void Package :: addPackage(char p_id[], char p_name[], char p_des[])
+{
+	strcpy(package_ID, p_id);
+	strcpy(package_name, p_name);
+	strcpy(package_description, p_des);
+}
+
+void Package :: displayPackage()
+{
+	cout << "Package ID : " << package_ID << endl;
+	cout << "Package Name : " << package_name << endl;
+	cout << "Package Description : " << package_description << endl;
+}
+
+#include "Feedback.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+void Feedback :: addFeedback(char f_id[], char f_msg[])
+{
+	strcpy(feedback_ID, f_id);
+	strcpy(feedback_Description, f_msg);
+}
+
+void Feedback :: displayFeedback()
+{
+	cout << "Feedback ID : " << feedback_ID << endl;
+	cout << "Feedback Description : " << feedback_Description << endl;
+}
