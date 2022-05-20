@@ -102,3 +102,58 @@ RegisteredCustomer :: ~RegisteredCustomer()
 {
 	//Destructor
 }
+
+#include "Booking.h"
+#include "GuestUser.h"
+#include "Invoice.h"
+#include "Payment.h"
+#include "RegisteredCustomer.h"
+#include "Room.h"
+#include "Staff.h"
+#include "Feedback.h"
+#include "Package.h"
+
+#include <iostream>
+using namespace std;
+
+int main(){
+  GuestUser* rg= new RegisteredCustomer(); //Object - RegisteredCustomer class
+
+  RegisteredCustomer* room= new Room();//Object - room class
+                 
+  RegisteredCustomer* fd= new Feedback();//  Object - feedback class
+
+  Booking *bk = new bk();//Object - Booking class
+
+  staff *stf = new staff();//Object - Staff class
+
+  Invoice* invoice = new Invoice();//Object - Invoice class
+
+  //method calling
+  rg-> login();
+  rg->displayDetails();
+
+  room->updateRoomDetails();
+  room->checkAvailability();
+
+  booking->addBooking();
+  booking->DisplayBookingPrice
+
+  fd->addFeedback();
+  fd->displayFeedback();
+
+  invoice->bookingDetails();
+  invoice->paymentDetails();
+  invoice->CustomerDetails();
+
+  //Delete Dynamic objects
+  delete rg;
+  delete room;
+  delete fd;
+  delete bk;
+  delete stf;
+  delete invoice;
+
+  return 0;
+  
+}
